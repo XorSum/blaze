@@ -14,12 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: npm
-
       - name: Validate PR title
         run: |
           # Check PR title format - will fail the job if format is invalid
